@@ -1,1 +1,50 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<script type="text/javascript" src="C:\Users\abhishek.jain\Desktop\JQTable-master\JQTable-master
+
+\jquery-1.11.2.min.js" ></script>
+	<script type="text/javascript" src="C:\Users\abhishek.jain\Desktop\JQTable-master\JQTable-master
+
+\index.js" ></script>
+	
+	
+	<script type="text/javascript">
+	
+		$(document).ready( function () {
+			var data = '[{"col1": "X999_Y999", "col2": "Looking forward to 2010!"},{"col1":"X998_Y998","col2": "Where\'s my contract?"}]'
+			var mydata = JSON.parse(data);
+			$("p").sortFunction(mydata,"desc");	
+			alert(mydata[0].col1);
+			//alert(mydata[0].col2);
+			alert(mydata[1].col1);
+			//alert(mydata[1].col2);
+		});
+	</script>
+
+</head>
+
+<body>
+<table id="table_id" class="display">
+    <thead>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Row 1 Data 1</td>
+            <td>Row 1 Data 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 Data 1</td>
+            <td>Row 2 Data 2</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+
+</html>
 
